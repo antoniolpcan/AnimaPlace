@@ -12,19 +12,19 @@
     <title>AnimaPlace</title>
   </head>
   <body>
-    <div class="container text-center" style="margin-top: 20rem;">
+    <div class="container text-center" style="margin-top: 5rem;margin-bottom: 7rem;">
+       <img src="images/Casinha.png" class="rounded mx-auto d-block" alt="Casinha de cachorro">
 
-        <h1 class="text-center">Login</h1>
         <br>
-        <form>
-            <div class="col-md-6 offset-md-3"">
-              <label for="_username" class="form-label">Usuário</label>
-              <input type="text" class="form-control" id="_username" required>
+        <form method="POST" action="./php/Login.php">
+            <div class="col-md-6 offset-md-3">
+              <label for="usr" class="form-label">Usuário</label>
+              <input type="text" class="form-control" name="usr" id="usr" required>
             </div>
             <br>
-            <div class="col-md-6 offset-md-3"">
+            <div class="col-md-6 offset-md-3">
               <label for="_password" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="_password" required>
+              <input type="password" class="form-control" name="pass" id="pass" required>
             </div>
             <br><br>
             <button type="submit" class="btn btn-primary">Logar</button>
